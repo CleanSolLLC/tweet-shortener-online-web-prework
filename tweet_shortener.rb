@@ -53,12 +53,6 @@ end
 
 def selective_tweet_shortener(tweet)
 
-  #array = tweets
-
-  #array.each do |s|
-
-  #string_characters = word_substituter(s)
-
     if tweet.length > 140
       word_substituter
 
@@ -67,3 +61,19 @@ def selective_tweet_shortener(tweet)
   end
 
 end
+
+def shortened_tweet_truncator(tweet)
+
+  if tweet.length > 140
+
+    substituttion_string = word_substituter
+
+      if substituttion_string.length > 140 
+      substituttion_string[0...140]
+  else
+      return tweet
+end
+
+
+end
+
