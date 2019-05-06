@@ -68,15 +68,13 @@ def shortened_tweet_truncator(tweet)
 
   if tweet.length > 140
 
-
-
-    substituttion_string = word_substituter(tweet)
+    string = word_substituter(tweet)
 
       binding.pry
 
-      if substituttion_string.length > 140
+      if string.length > 140
 
-      substituttion_string[0..139]
+        string[0..139]
   else
       return tweet
 end
