@@ -51,21 +51,19 @@ end
 end
 
 
-def selective_tweet_shortener(tweets)
+def selective_tweet_shortener(tweet)
 
-  array = tweets
+  #array = tweets
 
-  array.each do |s|
+  #array.each do |s|
 
-  string_characters = word_substituter(s)
+  #string_characters = word_substituter(s)
 
-    if string_characters.length > 140
+    if tweet.length > 140
       word_substituter
 
     else
-        return string_characters
+        return tweet
   end
-
-end
 
 end
