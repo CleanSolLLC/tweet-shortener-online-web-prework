@@ -68,6 +68,8 @@ def shortened_tweet_truncator(tweet)
 
   if tweet.length > 140
 
+  binding.pry
+
     substituttion_string = word_substituter(tweet)
 
       if substituttion_string.length > 140
