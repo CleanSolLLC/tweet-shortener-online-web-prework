@@ -72,7 +72,7 @@ def shortened_tweet_truncator(tweet)
 
       if substituttion_string.length > 140
 
-      substituttion_string[0..140]
+      substituttion_string[0..139]
   else
       return tweet
 end
