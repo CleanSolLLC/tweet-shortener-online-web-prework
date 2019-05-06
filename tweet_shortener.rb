@@ -59,12 +59,11 @@ def selective_tweet_shortener(tweets)
 
   string_characters = word_substituter(s)
 
-    if string_characters.length < 141
-      return string_characters
+    if string_characters.length > 140
+      word_substituter
 
     else
-        string_characters.slice!(0,140)
-
+        return string_characters
   end
 
 end
